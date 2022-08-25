@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KRProgressHUD
 
 class DefaultViewController: UIViewController {
 
@@ -15,15 +16,16 @@ class DefaultViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Navigation Methods
+    
+    func reloadApp(storyBorad: UIStoryboard, viewControllerID: String, animationOption: UIView.AnimationOptions = .transitionCrossDissolve) {
+        let rootviewcontroller: UIWindow = self.view.window!
+        rootviewcontroller.rootViewController = storyBorad.instantiateViewController(withIdentifier: viewControllerID)
+        UIView.transition(with: rootviewcontroller, duration: 0.6, options: animationOption, animations: nil)
     }
-    */
-
+    
+    @objc func closePage(){
+        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
+    }
 }
