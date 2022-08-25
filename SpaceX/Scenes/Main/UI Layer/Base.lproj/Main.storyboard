@@ -9,16 +9,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Loading View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoadingViewController" customModule="SpaceX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaceX_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ejA-cx-SwV">
+                                <rect key="frame" x="20" y="248" width="374" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="lMF-ZW-vPK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ejA-cx-SwV" secondAttribute="trailing" constant="20" id="hAK-0I-bP3"/>
+                            <constraint firstItem="ejA-cx-SwV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iEd-3a-pkL"/>
+                            <constraint firstItem="ejA-cx-SwV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uBZ-eS-Q2Z"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="leadingLogoConstraint" destination="uBZ-eS-Q2Z" id="hA7-bv-aUo"/>
+                        <outlet property="logoImg" destination="ejA-cx-SwV" id="bOu-wf-dch"/>
+                        <outlet property="trailingLogoConstraint" destination="hAK-0I-bP3" id="gsP-ni-Knw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -26,6 +44,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="SpaceX_logo" width="500" height="500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

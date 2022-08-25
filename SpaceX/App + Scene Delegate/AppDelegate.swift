@@ -11,6 +11,13 @@ import Alamofire
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    //MARK: - Public Object
+    
+    public var baseUrl: String = "https://api.spacexdata.com/v4/"
+    
+    
+    //MARK: Constants
+    
     let sessionManager: Session = {
         let configuration = URLSessionConfiguration.default
         configuration.httpMaximumConnectionsPerHost = 80
@@ -18,12 +25,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return Session(configuration: configuration)
     }()
 
+    
+    //MARK: - Launching App
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
+    // MARK: - UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
