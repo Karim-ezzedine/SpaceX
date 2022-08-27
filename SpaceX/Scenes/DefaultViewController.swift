@@ -16,6 +16,10 @@ class DefaultViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func showProgress(show: Bool) {
+        show ? KRProgressHUD.show() : KRProgressHUD.dismiss()
+    }
+    
     // MARK: - Navigation Methods
     
     func reloadApp(storyBorad: UIStoryboard, viewControllerID: String, animationOption: UIView.AnimationOptions = .transitionCrossDissolve) {

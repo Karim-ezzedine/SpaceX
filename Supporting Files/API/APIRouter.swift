@@ -15,7 +15,6 @@ protocol APIRouteable : URLRequestConvertible {
     var parametersAndEncoding: [ParametersAndEncoding] { get }
     var headers: HTTPHeaders { get }
     var requestTitle: String { get }
-    var authRequired: Bool { get }
 }
 
 struct ParametersAndEncoding {
@@ -74,5 +73,4 @@ struct getAPIData: APIRouteable {
     var parametersAndEncoding: [ParametersAndEncoding]
     var headers: HTTPHeaders = [:]
     var requestTitle: String
-    var authRequired: Bool = true
 }

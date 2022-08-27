@@ -9,21 +9,40 @@ import UIKit
 
 class LaunchesViewController: DefaultViewController {
 
+    //MARK: - @IBOutlet
+    
+    
+    //MARK: - Private Object
+    
+    private var launchesViwModel: LaunchesViewModel!
+    
+    
+    //MARK: - UIViewController Methods & Properties
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        DispatchQueue.main.async { [unowned self] in
+            self.launchesViwModel = LaunchesViewModel()
+            self.binding()
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: - Private Standard Function
+    
+    private func binding() {
+        launchesViwModel.showProgress.bind { [weak self] showProgress in
+            self?.showProgress(show: showProgress)
+        }
+        
+        launchesViwModel.showAlert.bind { [weak self] alert in
+            switch alert {
+            case .custom(let title, let msg, let btnText):
+                appDelegate.showAlert(vc: self, titleTxt: title, msgTxt: msg, btnTxt: btnText)
+            default:
+                break
+            }
+        }
     }
-    */
 
 }
