@@ -169,28 +169,15 @@ extension LaunchesViewController: UICollectionViewDataSource , UICollectionViewD
         
         let item = launchesViwModel.lauches.value[indexPath.item]
         cell.data = item
-//        cell.btnAdd.addTarget(self, action: #selector(goAddVacancy), for: .touchUpInside)
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        if homeViewModel.vacationsBalance.value[indexPath.item].isSelected {
-//            DispatchQueue.main.async { [unowned self] in
-//                self.collectionView.scrollToItem(at: IndexPath(item: self.selectedCollectionCell, section: 0), at: .centeredHorizontally, animated: true)
-//            }
-//
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.15){ [unowned self] in
-//                if let vc = Storyboard.vacation.instantiateViewController(withIdentifier: ViewControllerID.vacationsViewControllerID) as? VacationsViewController {
-//                    vc.selectedVacationId = homeViewModel.vacationsBalance.value[selectedCollectionCell].vacationID ?? 0
-//                    self.navigationController?.pushViewController(vc, animated: true)
-//                }
-//            }
-//        }
-//        else {
-//            self.selectedCollectionCell = indexPath.item
-//            self.collectionView.reloadData()
-//        }
+        if let vc = Storyboard.rockets.instantiateViewController(withIdentifier: ViewControllerID.rocketsViewID) as? RocketsViewController {
+            self.modalPresentationStyle = pageModale
+            self.present(vc, animated: true)
+        }
     }
 }
 

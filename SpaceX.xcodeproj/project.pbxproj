@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C58119BBF036E6FD2543DF7 /* Pods_SpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF897A5A6D54DA10ABD449AB /* Pods_SpaceX.framework */; };
 		8E2AD0AD28BD1C5500E92FAA /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2AD0AC28BD1C5500E92FAA /* UIViewExtensions.swift */; };
+		8E4461AD28BD78DE00AB3ADA /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4461AC28BD78DE00AB3ADA /* UIButtonExtensions.swift */; };
 		8E7FEE0E28B95D6100A1F72A /* LaunchesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FEE0D28B95D6100A1F72A /* LaunchesAPI.swift */; };
 		8E7FEE1028B95DAD00A1F72A /* Launches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FEE0F28B95DAD00A1F72A /* Launches.swift */; };
 		8E86F83728B801A8004FA943 /* LoadingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86F83628B801A8004FA943 /* LoadingModel.swift */; };
@@ -21,6 +22,9 @@
 		8E86F84C28B810E4004FA943 /* LaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86F84B28B810E4004FA943 /* LaunchesViewModel.swift */; };
 		8E86F84E28B81706004FA943 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86F84D28B81706004FA943 /* Webservice.swift */; };
 		8E86F85228B8174C004FA943 /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86F85128B8174C004FA943 /* APIPath.swift */; };
+		8EA8340628BD6CD100F62073 /* RocketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA8340528BD6CD100F62073 /* RocketsViewController.swift */; };
+		8EA8340828BD6F9C00F62073 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA8340728BD6F9C00F62073 /* Flag.swift */; };
+		8EC4DE8028BD6A58006FFB64 /* Rockets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC4DE7F28BD6A58006FFB64 /* Rockets.storyboard */; };
 		8EC9EDB428B759CE00BC78AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC9EDB328B759CE00BC78AE /* AppDelegate.swift */; };
 		8EC9EDB628B759CE00BC78AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC9EDB528B759CE00BC78AE /* SceneDelegate.swift */; };
 		8EC9EDBB28B759CE00BC78AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC9EDB928B759CE00BC78AE /* Main.storyboard */; };
@@ -76,6 +80,7 @@
 		17BF3344D483F89B3F04E448 /* Pods-SpaceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.debug.xcconfig"; sourceTree = "<group>"; };
 		715C645B378A21E322D1808C /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
 		8E2AD0AC28BD1C5500E92FAA /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		8E4461AC28BD78DE00AB3ADA /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		8E7FEE0D28B95D6100A1F72A /* LaunchesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesAPI.swift; sourceTree = "<group>"; };
 		8E7FEE0F28B95DAD00A1F72A /* Launches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launches.swift; sourceTree = "<group>"; };
 		8E86F83628B801A8004FA943 /* LoadingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingModel.swift; sourceTree = "<group>"; };
@@ -88,6 +93,9 @@
 		8E86F84B28B810E4004FA943 /* LaunchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewModel.swift; sourceTree = "<group>"; };
 		8E86F84D28B81706004FA943 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		8E86F85128B8174C004FA943 /* APIPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
+		8EA8340528BD6CD100F62073 /* RocketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsViewController.swift; sourceTree = "<group>"; };
+		8EA8340728BD6F9C00F62073 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		8EC4DE7F28BD6A58006FFB64 /* Rockets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rockets.storyboard; sourceTree = "<group>"; };
 		8EC9EDB028B759CE00BC78AE /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC9EDB328B759CE00BC78AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EC9EDB528B759CE00BC78AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +190,7 @@
 		8E86F83F28B80CA5004FA943 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				8EA8340728BD6F9C00F62073 /* Flag.swift */,
 				8ECA933E28BA5A2000FD3A3A /* Alert.swift */,
 				8EDBD26F28BBDF0100DE93BC /* UIStyle.swift */,
 				8ECA933C28BA527100FD3A3A /* IsTesting.swift */,
@@ -236,6 +245,31 @@
 				8ECA932B28BA0BDA00FD3A3A /* Launches */,
 			);
 			path = "Remote API Request";
+			sourceTree = "<group>";
+		};
+		8EC4DE7C28BD6A22006FFB64 /* Rockets */ = {
+			isa = PBXGroup;
+			children = (
+				8EC4DE7D28BD6A36006FFB64 /* Data Layer */,
+				8EC4DE7E28BD6A3D006FFB64 /* UI Layer */,
+			);
+			path = Rockets;
+			sourceTree = "<group>";
+		};
+		8EC4DE7D28BD6A36006FFB64 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		8EC4DE7E28BD6A3D006FFB64 /* UI Layer */ = {
+			isa = PBXGroup;
+			children = (
+				8EC4DE7F28BD6A58006FFB64 /* Rockets.storyboard */,
+				8EA8340528BD6CD100F62073 /* RocketsViewController.swift */,
+			);
+			path = "UI Layer";
 			sourceTree = "<group>";
 		};
 		8EC9EDA728B759CE00BC78AE = {
@@ -296,6 +330,7 @@
 				8EC9EDF228B784CD00BC78AE /* DefaultViewController.swift */,
 				8EC9EDE428B7608100BC78AE /* Main */,
 				8E86F84328B81008004FA943 /* Launches */,
+				8EC4DE7C28BD6A22006FFB64 /* Rockets */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -430,6 +465,7 @@
 			children = (
 				8E2AD0AC28BD1C5500E92FAA /* UIViewExtensions.swift */,
 				8EDBD27228BBDFD100DE93BC /* UILabelExtensions.swift */,
+				8E4461AC28BD78DE00AB3ADA /* UIButtonExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -558,6 +594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EC9EDC028B759D100BC78AE /* LaunchScreen.storyboard in Resources */,
+				8EC4DE8028BD6A58006FFB64 /* Rockets.storyboard in Resources */,
 				8ECA934428BA976400FD3A3A /* Lato-Bold.ttf in Resources */,
 				8EC9EDBD28B759D100BC78AE /* Assets.xcassets in Resources */,
 				8ECA934628BA976400FD3A3A /* Lato-Regular.ttf in Resources */,
@@ -644,13 +681,16 @@
 				8E86F84128B80CC5004FA943 /* Storyboard.swift in Sources */,
 				8EC9EDF328B784CD00BC78AE /* DefaultViewController.swift in Sources */,
 				8ECA933D28BA527100FD3A3A /* IsTesting.swift in Sources */,
+				8EA8340828BD6F9C00F62073 /* Flag.swift in Sources */,
 				8EC9EDB428B759CE00BC78AE /* AppDelegate.swift in Sources */,
+				8EA8340628BD6CD100F62073 /* RocketsViewController.swift in Sources */,
 				8ECA933128BA18AF00FD3A3A /* DataRequestRepository.swift in Sources */,
 				8ECA933328BA198A00FD3A3A /* GenericResponseResult.swift in Sources */,
 				8EC9EDF128B7848000BC78AE /* APIRouter.swift in Sources */,
 				8E7FEE1028B95DAD00A1F72A /* Launches.swift in Sources */,
 				8E86F83928B8021B004FA943 /* LoadingViewModel.swift in Sources */,
 				8E7FEE0E28B95D6100A1F72A /* LaunchesAPI.swift in Sources */,
+				8E4461AD28BD78DE00AB3ADA /* UIButtonExtensions.swift in Sources */,
 				8E86F84E28B81706004FA943 /* Webservice.swift in Sources */,
 				8EC9EDF628B78A6C00BC78AE /* singeltons.swift in Sources */,
 				8EDBD27828BBF23700DE93BC /* LaunchesCollectionViewCell.swift in Sources */,

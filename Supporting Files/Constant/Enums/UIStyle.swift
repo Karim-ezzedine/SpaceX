@@ -17,3 +17,8 @@ enum LabeleStyle {
     case visbyCFBold(text: String? = nil, textColor: UIColor = .white, fontSize: UIFont = getBoldLatoFont(size: 12))
     case custom(text: String? = nil, textColor: UIColor? = nil, font: UIFont? = nil, numberOfLines: Int = 1)
 }
+
+enum ButtonStyle {
+    case primaryButton(text: String = "", textColor: UIColor = .white, font: UIFont = getLatoFont(size: 18), backgroundColor: UIColor = AppColors.darkBlue, cornerRadius: CGFloat = 6)
+    case custom(text: String = "", backgroundColor: UIColor? = nil, cornerRadius: CGFloat? = nil, borderColor: UIColor? = nil, borderWidth: CGFloat? = nil)
+}

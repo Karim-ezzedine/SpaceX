@@ -10,6 +10,8 @@ import KRProgressHUD
 
 class DefaultViewController: UIViewController {
 
+    let pageModale: UIModalPresentationStyle = Flag.isIpad ? .pageSheet : .popover
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

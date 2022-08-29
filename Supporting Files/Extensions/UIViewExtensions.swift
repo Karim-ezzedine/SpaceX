@@ -24,6 +24,11 @@ extension UIView {
         self.layer.addSublayer(gradient)
     }
     
+    func roundTop(radius:CGFloat = 5){
+        self.layer.cornerRadius = radius
+        self.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+    }
+    
     func setViewStyle(viewStyle: ViewStyle) {
         switch viewStyle {
         case .custom(let color, let cornerRadius, let borderColor, let borderWidth):
