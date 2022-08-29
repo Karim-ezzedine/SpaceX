@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     public var isTesting = (Bundle.main.infoDictionary?["isTesting"] as? Bool) ?? false
     
     let dateFormat = DateFormatter()
+    let dataDateFormat = DateFormatter()
     
     //MARK: Constants
     
@@ -35,8 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // getFontFamily()
         
-        dateFormat.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        dateFormat.dateFormat = "d MMM yyyy, HH:mm z"
         dateFormat.locale = Locale(identifier: "en")
+        
+        dataDateFormat.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        dataDateFormat.locale = Locale(identifier: "en")
         
         return true
     }

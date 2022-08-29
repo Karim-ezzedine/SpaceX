@@ -20,13 +20,13 @@ typealias Launches = [Launche]
 
 class Launche: Codable {
     
-    let id: String?
-    let flightNumber: Int?
-    let dateUTC: String?
-    let dateUnix: Int?
-    let upcoming: Bool?
-    let name: String?
-    let rocket: String?
+    private let id: String?
+    private let flightNumber: Int?
+    private let dateUTC: String?
+    private let dateUnix: Int?
+    private let upcoming: Bool?
+    private let name: String?
+    private let rocket: String?
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -46,5 +46,19 @@ class Launche: Codable {
         self.upcoming = upcoming
         self.name = name
         self.rocket = rocket
+    }
+    
+    var flightNumberValue: String {
+        return flightNumber != nil ? String(flightNumber!) : ""
+    }
+    
+    var launchingDate: String {
+        if let date = appDelegate.dataDateFormat.date(from: dateUTC ?? "") {
+            let dateString = appDelegate.dateFormat.string(from: date)
+            return dateString
+        }
+        else  {
+            return ""
+        }
     }
 }

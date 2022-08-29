@@ -15,7 +15,7 @@ class LaunchesAPI {
         var queryParams: [String : Any] = [:]
         
         if let date = Calendar.current.date(byAdding: .year, value: -3, to: Date()) {
-            let formatedDate = appDelegate.dateFormat.string(from: date)
+            let formatedDate = appDelegate.dataDateFormat.string(from: date)
             
             queryParams = [
                 "date_utc": [

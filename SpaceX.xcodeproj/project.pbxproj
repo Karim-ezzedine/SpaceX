@@ -47,6 +47,11 @@
 		8ECA934628BA976400FD3A3A /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8ECA934328BA976400FD3A3A /* Lato-Regular.ttf */; };
 		8ECA934828BA990400FD3A3A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA934728BA990400FD3A3A /* Fonts.swift */; };
 		8ECA934A28BA9B7C00FD3A3A /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA934928BA9B7C00FD3A3A /* AppColors.swift */; };
+		8EDBD27028BBDF0100DE93BC /* UIStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD26F28BBDF0100DE93BC /* UIStyle.swift */; };
+		8EDBD27328BBDFD100DE93BC /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD27228BBDFD100DE93BC /* UILabelExtensions.swift */; };
+		8EDBD27828BBF23700DE93BC /* LaunchesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD27628BBF23700DE93BC /* LaunchesCollectionViewCell.swift */; };
+		8EDBD27928BBF23700DE93BC /* LaunchesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDBD27728BBF23700DE93BC /* LaunchesCollectionViewCell.xib */; };
+		8EDBD27F28BC14A000DE93BC /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8EDBD27E28BC14A000DE93BC /* Lato-Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +117,11 @@
 		8ECA934328BA976400FD3A3A /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		8ECA934728BA990400FD3A3A /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		8ECA934928BA9B7C00FD3A3A /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		8EDBD26F28BBDF0100DE93BC /* UIStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStyle.swift; sourceTree = "<group>"; };
+		8EDBD27228BBDFD100DE93BC /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
+		8EDBD27628BBF23700DE93BC /* LaunchesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesCollectionViewCell.swift; sourceTree = "<group>"; };
+		8EDBD27728BBF23700DE93BC /* LaunchesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchesCollectionViewCell.xib; sourceTree = "<group>"; };
+		8EDBD27E28BC14A000DE93BC /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
 		FF897A5A6D54DA10ABD449AB /* Pods_SpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -171,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				8ECA933E28BA5A2000FD3A3A /* Alert.swift */,
+				8EDBD26F28BBDF0100DE93BC /* UIStyle.swift */,
 				8ECA933C28BA527100FD3A3A /* IsTesting.swift */,
 				8ECA934928BA9B7C00FD3A3A /* AppColors.swift */,
 				8E86F84028B80CC5004FA943 /* Storyboard.swift */,
@@ -203,6 +214,7 @@
 				8E86F84628B81099004FA943 /* Launches.storyboard */,
 				8E86F84B28B810E4004FA943 /* LaunchesViewModel.swift */,
 				8E86F84828B810B9004FA943 /* LaunchesViewController.swift */,
+				8EDBD27528BBF20C00DE93BC /* Cell */,
 			);
 			path = "UI Layer";
 			sourceTree = "<group>";
@@ -348,6 +360,7 @@
 				8ECA934028BA971B00FD3A3A /* Fonts */,
 				8E86F84F28B81715004FA943 /* Model */,
 				8EC9EDF428B78A5100BC78AE /* Constant */,
+				8EDBD27128BBDFA600DE93BC /* Extensions */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -402,11 +415,29 @@
 			isa = PBXGroup;
 			children = (
 				8ECA934128BA976400FD3A3A /* Lato-Bold.ttf */,
+				8EDBD27E28BC14A000DE93BC /* Lato-Black.ttf */,
 				8ECA934228BA976400FD3A3A /* Lato-Medium.ttf */,
 				8ECA934328BA976400FD3A3A /* Lato-Regular.ttf */,
 				8ECA934728BA990400FD3A3A /* Fonts.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8EDBD27128BBDFA600DE93BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBD27228BBDFD100DE93BC /* UILabelExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8EDBD27528BBF20C00DE93BC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBD27628BBF23700DE93BC /* LaunchesCollectionViewCell.swift */,
+				8EDBD27728BBF23700DE93BC /* LaunchesCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		9182A65EB2E476D0DD9ACE50 /* Frameworks */ = {
@@ -527,9 +558,11 @@
 				8ECA934428BA976400FD3A3A /* Lato-Bold.ttf in Resources */,
 				8EC9EDBD28B759D100BC78AE /* Assets.xcassets in Resources */,
 				8ECA934628BA976400FD3A3A /* Lato-Regular.ttf in Resources */,
+				8EDBD27928BBF23700DE93BC /* LaunchesCollectionViewCell.xib in Resources */,
 				8EC9EDBB28B759CE00BC78AE /* Main.storyboard in Resources */,
 				8EC9EDEA28B7668E00BC78AE /* Color Assets.xcassets in Resources */,
 				8ECA934528BA976400FD3A3A /* Lato-Medium.ttf in Resources */,
+				8EDBD27F28BC14A000DE93BC /* Lato-Black.ttf in Resources */,
 				8E86F84728B81099004FA943 /* Launches.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,7 +630,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EDBD27028BBDF0100DE93BC /* UIStyle.swift in Sources */,
 				8ECA932D28BA0C2800FD3A3A /* LaunchesAPIClient.swift in Sources */,
+				8EDBD27328BBDFD100DE93BC /* UILabelExtensions.swift in Sources */,
 				8E86F83C28B8035F004FA943 /* Box.swift in Sources */,
 				8E86F85228B8174C004FA943 /* APIPath.swift in Sources */,
 				8E86F84928B810B9004FA943 /* LaunchesViewController.swift in Sources */,
@@ -615,6 +650,7 @@
 				8E7FEE0E28B95D6100A1F72A /* LaunchesAPI.swift in Sources */,
 				8E86F84E28B81706004FA943 /* Webservice.swift in Sources */,
 				8EC9EDF628B78A6C00BC78AE /* singeltons.swift in Sources */,
+				8EDBD27828BBF23700DE93BC /* LaunchesCollectionViewCell.swift in Sources */,
 				8ECA933F28BA5A2000FD3A3A /* Alert.swift in Sources */,
 				8ECA933728BA1C0A00FD3A3A /* LaunchesAPIDataRequest.swift in Sources */,
 				8EC9EDB628B759CE00BC78AE /* SceneDelegate.swift in Sources */,

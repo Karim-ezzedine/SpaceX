@@ -19,3 +19,7 @@ func getMediumLatoFont(size: CGFloat) -> UIFont {
 func getBoldLatoFont(size: CGFloat) -> UIFont {
     return UIFont(name: "Lato-Bold", size: size)!
 }
+
+func getExtraBoldLatoFont(size: CGFloat) -> UIFont {
+    return UIFont(name: "Lato-Black", size: size)!
+}

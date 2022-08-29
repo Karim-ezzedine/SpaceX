@@ -10,5 +10,5 @@ import UIKit
 
 enum AppColors {
     static let mustard = UIColor(named: "Mustard")
-    static let primaryTextColor = UIColor(named: "PrimaryTextColor")
+    static let primaryTextColor = UIColor(named: "PrimaryTextColor") ?? .black
 }
