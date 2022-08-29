@@ -7,6 +7,11 @@
 
 import UIKit
 
+enum ViewStyle {
+    case custom(color: UIColor? = nil, cornerRadius: CGFloat? = nil, borderColor: UIColor? = nil, borderWidth: CGFloat? = nil)
+}
+
+
 enum LabeleStyle {
     case title(text: String? = nil, textColor: UIColor = AppColors.primaryTextColor, fontSize: UIFont = getBoldLatoFont(size: 24))
     case visbyCFBold(text: String? = nil, textColor: UIColor = .white, fontSize: UIFont = getBoldLatoFont(size: 12))

@@ -15,18 +15,19 @@ class LaunchesAPI {
         var queryParams: [String : Any] = [:]
         
         if let date = Calendar.current.date(byAdding: .year, value: -3, to: Date()) {
-            let formatedDate = appDelegate.dataDateFormat.string(from: date)
-            
             queryParams = [
-                "date_utc": [
-                    "$gte": formatedDate
+                "date_unix": [
+                    "$gte": Int(date.timeIntervalSince1970)
                 ]
             ]
         }
     
         let optionsParams: [String : Any] = [
             "pagination": false,
-            "select": ["name", "flight_number", "date_utc", "date_unix", "upcoming", "rocket", "success"]
+            "select": ["name", "flight_number", "date_utc", "date_unix", "upcoming", "rocket", "success"],
+            "sort": [
+                "date_unix": "desc"
+            ]
         ]
         
         let parameters: Parameters = [

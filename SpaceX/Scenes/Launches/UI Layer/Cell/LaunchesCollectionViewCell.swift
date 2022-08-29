@@ -14,7 +14,9 @@ class LaunchesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var viewMain: UIView!
     @IBOutlet weak var lblNumber: UILabel!
     @IBOutlet weak var lblDate: UILabel!
-    
+    @IBOutlet weak var lblLaunchingName: UILabel!
+    @IBOutlet weak var upcomingIndicator: UIProgressView!
+    @IBOutlet weak var viewIndicator: UIView!
     
     //MARK: - UICollectionViewCell Methods & Properties
     
@@ -25,6 +27,8 @@ class LaunchesCollectionViewCell: UICollectionViewCell {
         
         self.viewMain.clipsToBounds = true
         self.viewMain.layer.cornerRadius = 8
+        self.viewIndicator.clipsToBounds = true
+        self.viewIndicator.layer.cornerRadius = self.viewIndicator.frame.height/2
     }
 
     
@@ -33,6 +37,16 @@ class LaunchesCollectionViewCell: UICollectionViewCell {
             lblNumber.setLabelStyle(labelStyle: .visbyCFBold(text: data.flightNumberValue, fontSize: getExtraBoldLatoFont(size: 18)))
             
             lblDate.setLabelStyle(labelStyle: .visbyCFBold(text: data.launchingDate))
+            
+            lblLaunchingName.setLabelStyle(labelStyle: .custom(
+                text: data.launchingName,
+                textColor: .white,
+                font: getBoldLatoFont(size: 14),
+                numberOfLines: 2
+            ))
+            
+            upcomingIndicator.isHidden = !data.isUpcoming
+            upcomingIndicator.progress = 0.5
         }
     }
     

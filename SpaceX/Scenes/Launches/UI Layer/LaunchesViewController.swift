@@ -14,6 +14,20 @@ class LaunchesViewController: DefaultViewController {
     @IBOutlet weak var launchesCollectionView: UICollectionView!
     @IBOutlet weak var launchesCollectionFlow: UICollectionViewFlowLayout!
     
+    @IBOutlet weak var lblBigLaunchTitle: UILabel!
+    @IBOutlet weak var viewGold: UIView!
+    @IBOutlet weak var lblGold: UILabel!
+    @IBOutlet weak var lblBigLaunchName: UILabel!
+    @IBOutlet weak var bigLaunchImageGradient: UIView!
+    @IBOutlet weak var viewBigLaunch: UIView!
+    @IBOutlet weak var viewAuthorImage: UIView!
+    
+    @IBOutlet weak var lblAuthorName: UILabel!
+    @IBOutlet weak var lblArticleTitle: UILabel!
+    @IBOutlet weak var lblBigLaunchNumber: UILabel!
+    @IBOutlet weak var lblBigLaunchDate: UILabel!
+    @IBOutlet weak var lblBigLaunchDetail: UILabel!
+    
     //MARK: - Private Object
     
     private var launchesViwModel: LaunchesViewModel!
@@ -42,7 +56,68 @@ class LaunchesViewController: DefaultViewController {
         launchesCollectionView.backgroundColor = .clear
         launchesCollectionView?.register(UINib(nibName: "LaunchesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "LaunchesCollectionViewCellID")
         
-        lblTitle.setLabelStyle(labelStyle: .title())
+        lblTitle.setLabelStyle(labelStyle: .title(text: "Launches"))
+        lblBigLaunchTitle.setLabelStyle(labelStyle: .title(text: "The Big Launch"))
+        
+        viewGold.setViewStyle(viewStyle: .custom(color: AppColors.mustard, cornerRadius: viewGold.frame.height/2))
+        
+        lblGold.setLabelStyle(labelStyle: .custom(
+            text: "GOLD",
+            textColor: .white,
+            font: getBoldLatoFont(size: 10)
+        ))
+        
+        lblBigLaunchName.setLabelStyle(labelStyle: .custom(
+            text: "SPACE SHIPS",
+            textColor: AppColors.primaryTextColor,
+            font: getBoldLatoFont(size: 10)
+        ))
+        
+        self.lblGold.spaceBetweenCharacter(space: 1.8)
+        self.lblBigLaunchName.spaceBetweenCharacter(space: 1.8)
+        
+        self.bigLaunchImageGradient.addVetricalGradient(topColor: UIColor.white.withAlphaComponent(0.1), bottomColor: UIColor.black.withAlphaComponent(0.85), opacity: 0.9)
+        
+        viewBigLaunch.setViewStyle(viewStyle: .custom(cornerRadius: 8))
+        viewAuthorImage.setViewStyle(viewStyle: .custom(
+            color: AppColors.mustard,
+            cornerRadius: viewAuthorImage.frame.height/2
+        ))
+        
+        lblAuthorName.setLabelStyle(labelStyle: .custom(
+            text: "by Eng. Dieter Rams",
+            textColor: .white,
+            font: getMediumLatoFont(size: 11)
+        ))
+        
+        lblArticleTitle.setLabelStyle(labelStyle: .custom(
+            text: "ISS geosynchronous and is it stationary",
+            textColor: .white,
+            font: getBoldLatoFont(size: 16),
+            numberOfLines: 2
+        ))
+        
+        lblBigLaunchNumber.setLabelStyle(labelStyle: .custom(
+            text: "2355",
+            textColor: .white,
+            font: getExtraBoldLatoFont(size: 18),
+            numberOfLines: 1
+        ))
+        
+        lblBigLaunchDate.setLabelStyle(labelStyle: .custom(
+            text: "24 Feb 202\n11:25 GMT+5",
+            textColor: .white,
+            font: getBoldLatoFont(size: 12),
+            numberOfLines: 2
+        ))
+        
+        lblBigLaunchDetail.setLabelStyle(labelStyle: .custom(
+            textColor: .white,
+            font: getMediumLatoFont(size: 11),
+            numberOfLines: 0
+        ))
+        
+        lblBigLaunchDetail.spaceBetweenLine(space: 2)
     }
     
     private func binding() {

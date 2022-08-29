@@ -20,7 +20,18 @@ class LaunchesAPIDataRequest: LaunchesDataRequestRepository {
             switch result {
             case .success(let data):
                 print("getLaunches Total: \(data.count)")
-                completion(GenericResponseResult(isValid: true, object: data))
+                
+                var launches: Launches = []
+                
+                if let date = Calendar.current.date(byAdding: .year, value: -3, to: Date()) {
+                    launches = data.filter({$0.isUpcoming || ($0.isSuccessful && $0.launchingDateSince1970 > Int(date.timeIntervalSince1970))})
+                }
+                else {
+                    launches = data.filter({$0.isUpcoming || $0.isSuccessful})
+                }
+                
+                print("Filtered Launches Total: \(launches.count)")
+                completion(GenericResponseResult(isValid: true, object: launches))
             case .failure(let error):
                 if isDebug() {
                     print("getLaunches Error: \(error.localizedDescription)")

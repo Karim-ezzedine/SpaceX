@@ -66,9 +66,60 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K7n-BR-z20">
-                                        <rect key="frame" x="0.0" y="48" width="142" height="106"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="odk-iI-hhl">
+                                        <rect key="frame" x="0.0" y="48" width="142" height="47"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K7n-BR-z20">
+                                        <rect key="frame" x="0.0" y="101" width="142" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Za-FZ-x4z">
+                                                <rect key="frame" x="0.0" y="0.0" width="142" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="w0x-Te-kNg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="7Za-FZ-x4z" firstAttribute="top" secondItem="K7n-BR-z20" secondAttribute="top" id="HEL-3v-WFo"/>
+                                            <constraint firstItem="7Za-FZ-x4z" firstAttribute="leading" secondItem="K7n-BR-z20" secondAttribute="leading" id="P1O-Yn-fAc"/>
+                                            <constraint firstAttribute="bottom" secondItem="7Za-FZ-x4z" secondAttribute="bottom" id="YrQ-ZE-ild"/>
+                                            <constraint firstAttribute="trailing" secondItem="7Za-FZ-x4z" secondAttribute="trailing" id="xLh-b4-oPO"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWo-wI-z4P">
+                                        <rect key="frame" x="0.0" y="142" width="142" height="12"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MsR-4a-4z5">
+                                                <rect key="frame" x="0.0" y="7" width="142" height="5"/>
+                                                <subviews>
+                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jOE-o4-Fe4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="142" height="5"/>
+                                                        <color key="progressTintColor" name="Mustard"/>
+                                                        <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </progressView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="jOE-o4-Fe4" firstAttribute="leading" secondItem="MsR-4a-4z5" secondAttribute="leading" id="4oB-em-Ooe"/>
+                                                    <constraint firstAttribute="height" constant="5" id="I84-W9-Lmf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jOE-o4-Fe4" secondAttribute="trailing" id="P9i-7F-LVq"/>
+                                                    <constraint firstAttribute="bottom" secondItem="jOE-o4-Fe4" secondAttribute="bottom" id="X6l-eA-2j9"/>
+                                                    <constraint firstItem="jOE-o4-Fe4" firstAttribute="top" secondItem="MsR-4a-4z5" secondAttribute="top" id="jXb-ZG-Ht3"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="MsR-4a-4z5" firstAttribute="top" secondItem="vWo-wI-z4P" secondAttribute="top" constant="7" id="Aa4-M2-Tou"/>
+                                            <constraint firstAttribute="bottom" secondItem="MsR-4a-4z5" secondAttribute="bottom" id="Oky-gc-EHu"/>
+                                            <constraint firstAttribute="trailing" secondItem="MsR-4a-4z5" secondAttribute="trailing" id="T5K-Sy-HrJ"/>
+                                            <constraint firstItem="MsR-4a-4z5" firstAttribute="leading" secondItem="vWo-wI-z4P" secondAttribute="leading" id="twI-kS-2xC"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -97,7 +148,10 @@
             <size key="customSize" width="190" height="200"/>
             <connections>
                 <outlet property="lblDate" destination="xyq-Gh-NBD" id="NVX-qk-m5S"/>
+                <outlet property="lblLaunchingName" destination="7Za-FZ-x4z" id="bVg-q4-haJ"/>
                 <outlet property="lblNumber" destination="Hcj-QI-gus" id="5th-Bp-OL4"/>
+                <outlet property="upcomingIndicator" destination="jOE-o4-Fe4" id="aVU-NT-5kF"/>
+                <outlet property="viewIndicator" destination="MsR-4a-4z5" id="htR-QZ-Nve"/>
                 <outlet property="viewMain" destination="ldd-Cj-20d" id="ey8-HZ-d8p"/>
             </connections>
             <point key="canvasLocation" x="218.84057971014494" y="174.10714285714286"/>
@@ -107,6 +161,9 @@
         <image name="rocketBackground" width="191" height="200.5"/>
         <namedColor name="DarkBlue">
             <color red="0.075000002980232239" green="0.31000000238418579" blue="0.53700000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Mustard">
+            <color red="0.79600000381469727" green="0.60799998044967651" blue="0.012000000104308128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

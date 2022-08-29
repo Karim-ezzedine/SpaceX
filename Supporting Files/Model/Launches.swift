@@ -27,6 +27,7 @@ class Launche: Codable {
     private let upcoming: Bool?
     private let name: String?
     private let rocket: String?
+    private let success: Bool?
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -36,9 +37,10 @@ class Launche: Codable {
         case upcoming
         case name
         case rocket
+        case success
     }
     
-    init(id: String? = nil, flightNumber: Int? = nil, dateUTC: String? = nil, dateUnix: Int? = nil, upcoming: Bool? = nil, name: String? = nil, rocket: String? = nil) {
+    init(id: String? = nil, flightNumber: Int? = nil, dateUTC: String? = nil, dateUnix: Int? = nil, upcoming: Bool? = nil, name: String? = nil, rocket: String? = nil, success: Bool? = nil) {
         self.id = id
         self.flightNumber = flightNumber
         self.dateUTC = dateUTC
@@ -46,6 +48,7 @@ class Launche: Codable {
         self.upcoming = upcoming
         self.name = name
         self.rocket = rocket
+        self.success = success
     }
     
     var flightNumberValue: String {
@@ -61,4 +64,10 @@ class Launche: Codable {
             return ""
         }
     }
+    
+    var launchingDateSince1970: Int { return dateUnix ?? 0 }
+    var isUpcoming: Bool { return upcoming ?? false }
+    var isSuccessful: Bool { return success ?? false }
+    var launchingName: String { return name ?? "" }
+    
 }
