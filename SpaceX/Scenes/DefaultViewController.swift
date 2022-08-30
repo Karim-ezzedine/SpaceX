@@ -10,10 +10,16 @@ import KRProgressHUD
 
 class DefaultViewController: UIViewController {
 
+    let pageModale: UIModalPresentationStyle = Flag.isIpad ? .pageSheet : .popover
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func showProgress(show: Bool) {
+        show ? KRProgressHUD.show() : KRProgressHUD.dismiss()
     }
     
     // MARK: - Navigation Methods

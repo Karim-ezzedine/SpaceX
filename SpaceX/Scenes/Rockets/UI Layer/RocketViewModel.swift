@@ -1,42 +1,42 @@
 //
-//  LaunchesViewModel.swift
+//  RocketViewModel.swift
 //  SpaceX
 //
-//  Created by Karim Ezzedine on 25/08/2022.
+//  Created by Karim Ezzedine on 30/08/2022.
 //
 
 import Foundation
 
-class LaunchesViewModel {
+class RocketViewModel {
     //MARK: - Private Object
-    private var launchesModel: LaunchesModel
+    private var rocketModel: RocketModel
     
     //MARK: - Binding Object
     var showAlert: Box<Alert> = Box(.none)
     var showProgress: Box<Bool> = Box(false)
-    var lauches: Box<Launches> = Box([])
+    var rocket: Box<Rocket> = Box(Rocket())
     
     //MARK: - Geters
     
     //MARK: - Initializer
-    init(launchesModel: LaunchesModel = LaunchesModel()) {
-        self.launchesModel = launchesModel
-        self.getLaunches()
+    init(id: String) {
+        self.rocketModel = RocketModel(id: id)
+        self.getRocket()
     }
 }
 
 //MARK: - Data Fetching
-private extension LaunchesViewModel {
+private extension RocketViewModel {
     
-    func getLaunches() {
+    func getRocket() {
         self.showProgress.value = true
         
-        launchesModel.launchesDataRequest.getLaunches { [unowned self] result in
+        rocketModel.rocketsDataRequest.getRocket(id: rocketModel.id) { [unowned self] result in
             
             self.showProgress.value = false
             
             if result.isValid {
-                self.lauches.value = result.object
+                self.rocket.value = result.object
             }
             else {
                 self.showAlert.value = Alert.custom(title: "", msg: result.message, btnText: "OK")
