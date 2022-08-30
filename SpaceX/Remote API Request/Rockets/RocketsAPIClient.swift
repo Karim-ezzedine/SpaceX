@@ -1,23 +1,24 @@
 //
-//  LaunchesAPIClient.swift
+//  RocketsAPIClient.swift
 //  SpaceX
 //
-//  Created by Karim Ezzedine on 27/08/2022.
+//  Created by Karim Ezzedine on 30/08/2022.
 //
 
 import Foundation
+
 import Alamofire
 
 extension APIClient {
     
-    static func getLaunches(param: Parameters, completion:@escaping (Result<GetLaunchesResult, AFError>)->Void) {
+    static func getRockets(param: Parameters, completion:@escaping (Result<GetRocketsResult, AFError>)->Void) {
         
         let getRoute = getAPIData(
             baseURL: appDelegate.baseUrl,
-            path: Webservice.launches.value,
+            path: Webservice.rockets.value,
             method: .post,
             parametersAndEncoding: [ParametersAndEncoding(parameters: param, encoding: JSONEncoding.default)],
-            requestTitle: "GetLaunches"
+            requestTitle: "GetRockets"
         )
         
         performRequest(route: getRoute, completion: completion)

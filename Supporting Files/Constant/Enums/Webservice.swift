@@ -9,5 +9,5 @@ import Foundation
 
 enum Webservice {
     static let launches = APIPath(key: "01", value: "launches/query")
-    static let rockets = APIPath(key: "02", value: "rockets")
+    static let rockets = APIPath(key: "02", value: "rockets/query")
 }

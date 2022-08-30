@@ -22,6 +22,14 @@
 		8E86F84C28B810E4004FA943 /* LaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86F84B28B810E4004FA943 /* LaunchesViewModel.swift */; };
 		8E86F84E28B81706004FA943 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86F84D28B81706004FA943 /* Webservice.swift */; };
 		8E86F85228B8174C004FA943 /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86F85128B8174C004FA943 /* APIPath.swift */; };
+		8E99852528BDD72300738AA7 /* Rockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99852428BDD72300738AA7 /* Rockets.swift */; };
+		8E99852928BDD9DF00738AA7 /* RocketsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99852828BDD9DF00738AA7 /* RocketsAPIClient.swift */; };
+		8E99852B28BDDA4A00738AA7 /* RocketsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99852A28BDDA4A00738AA7 /* RocketsAPI.swift */; };
+		8E99852E28BDDC5300738AA7 /* RocketsDataRequestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99852D28BDDC5300738AA7 /* RocketsDataRequestRepository.swift */; };
+		8E99853028BDDFC500738AA7 /* RocketsAPIDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99852F28BDDFC500738AA7 /* RocketsAPIDataRequest.swift */; };
+		8E99853228BDE86B00738AA7 /* RocketsFakeDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99853128BDE86B00738AA7 /* RocketsFakeDataRequest.swift */; };
+		8E99853428BDE95000738AA7 /* RocketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99853328BDE95000738AA7 /* RocketViewModel.swift */; };
+		8E99853728BDE97700738AA7 /* RocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99853628BDE97700738AA7 /* RocketModel.swift */; };
 		8EA8340628BD6CD100F62073 /* RocketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA8340528BD6CD100F62073 /* RocketsViewController.swift */; };
 		8EA8340828BD6F9C00F62073 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA8340728BD6F9C00F62073 /* Flag.swift */; };
 		8EC4DE8028BD6A58006FFB64 /* Rockets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC4DE7F28BD6A58006FFB64 /* Rockets.storyboard */; };
@@ -39,7 +47,7 @@
 		8EC9EDF328B784CD00BC78AE /* DefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC9EDF228B784CD00BC78AE /* DefaultViewController.swift */; };
 		8EC9EDF628B78A6C00BC78AE /* singeltons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC9EDF528B78A6C00BC78AE /* singeltons.swift */; };
 		8ECA932D28BA0C2800FD3A3A /* LaunchesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA932C28BA0C2800FD3A3A /* LaunchesAPIClient.swift */; };
-		8ECA933128BA18AF00FD3A3A /* DataRequestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA933028BA18AF00FD3A3A /* DataRequestRepository.swift */; };
+		8ECA933128BA18AF00FD3A3A /* LaunchesDataRequestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA933028BA18AF00FD3A3A /* LaunchesDataRequestRepository.swift */; };
 		8ECA933328BA198A00FD3A3A /* GenericResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA933228BA198A00FD3A3A /* GenericResponseResult.swift */; };
 		8ECA933528BA1BC100FD3A3A /* LaunchesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA933428BA1BC100FD3A3A /* LaunchesModel.swift */; };
 		8ECA933728BA1C0A00FD3A3A /* LaunchesAPIDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA933628BA1C0A00FD3A3A /* LaunchesAPIDataRequest.swift */; };
@@ -93,6 +101,14 @@
 		8E86F84B28B810E4004FA943 /* LaunchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewModel.swift; sourceTree = "<group>"; };
 		8E86F84D28B81706004FA943 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		8E86F85128B8174C004FA943 /* APIPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
+		8E99852428BDD72300738AA7 /* Rockets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rockets.swift; sourceTree = "<group>"; };
+		8E99852828BDD9DF00738AA7 /* RocketsAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsAPIClient.swift; sourceTree = "<group>"; };
+		8E99852A28BDDA4A00738AA7 /* RocketsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsAPI.swift; sourceTree = "<group>"; };
+		8E99852D28BDDC5300738AA7 /* RocketsDataRequestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsDataRequestRepository.swift; sourceTree = "<group>"; };
+		8E99852F28BDDFC500738AA7 /* RocketsAPIDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsAPIDataRequest.swift; sourceTree = "<group>"; };
+		8E99853128BDE86B00738AA7 /* RocketsFakeDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsFakeDataRequest.swift; sourceTree = "<group>"; };
+		8E99853328BDE95000738AA7 /* RocketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewModel.swift; sourceTree = "<group>"; };
+		8E99853628BDE97700738AA7 /* RocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketModel.swift; sourceTree = "<group>"; };
 		8EA8340528BD6CD100F62073 /* RocketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsViewController.swift; sourceTree = "<group>"; };
 		8EA8340728BD6F9C00F62073 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
 		8EC4DE7F28BD6A58006FFB64 /* Rockets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rockets.storyboard; sourceTree = "<group>"; };
@@ -114,7 +130,7 @@
 		8EC9EDF228B784CD00BC78AE /* DefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewController.swift; sourceTree = "<group>"; };
 		8EC9EDF528B78A6C00BC78AE /* singeltons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = singeltons.swift; sourceTree = "<group>"; };
 		8ECA932C28BA0C2800FD3A3A /* LaunchesAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesAPIClient.swift; sourceTree = "<group>"; };
-		8ECA933028BA18AF00FD3A3A /* DataRequestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequestRepository.swift; sourceTree = "<group>"; };
+		8ECA933028BA18AF00FD3A3A /* LaunchesDataRequestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesDataRequestRepository.swift; sourceTree = "<group>"; };
 		8ECA933228BA198A00FD3A3A /* GenericResponseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponseResult.swift; sourceTree = "<group>"; };
 		8ECA933428BA1BC100FD3A3A /* LaunchesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesModel.swift; sourceTree = "<group>"; };
 		8ECA933628BA1C0A00FD3A3A /* LaunchesAPIDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesAPIDataRequest.swift; sourceTree = "<group>"; };
@@ -233,6 +249,7 @@
 		8E86F84F28B81715004FA943 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8E99852428BDD72300738AA7 /* Rockets.swift */,
 				8E86F85128B8174C004FA943 /* APIPath.swift */,
 				8E7FEE0F28B95DAD00A1F72A /* Launches.swift */,
 			);
@@ -243,8 +260,36 @@
 			isa = PBXGroup;
 			children = (
 				8ECA932B28BA0BDA00FD3A3A /* Launches */,
+				8E99852328BDD5F100738AA7 /* Rockets */,
 			);
 			path = "Remote API Request";
+			sourceTree = "<group>";
+		};
+		8E99852328BDD5F100738AA7 /* Rockets */ = {
+			isa = PBXGroup;
+			children = (
+				8E99852A28BDDA4A00738AA7 /* RocketsAPI.swift */,
+				8E99852828BDD9DF00738AA7 /* RocketsAPIClient.swift */,
+			);
+			path = Rockets;
+			sourceTree = "<group>";
+		};
+		8E99852C28BDDC1800738AA7 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				8E99852F28BDDFC500738AA7 /* RocketsAPIDataRequest.swift */,
+				8E99853128BDE86B00738AA7 /* RocketsFakeDataRequest.swift */,
+				8E99852D28BDDC5300738AA7 /* RocketsDataRequestRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8E99853528BDE96200738AA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E99853628BDE97700738AA7 /* RocketModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8EC4DE7C28BD6A22006FFB64 /* Rockets */ = {
@@ -259,6 +304,8 @@
 		8EC4DE7D28BD6A36006FFB64 /* Data Layer */ = {
 			isa = PBXGroup;
 			children = (
+				8E99853528BDE96200738AA7 /* Model */,
+				8E99852C28BDDC1800738AA7 /* Repositories */,
 			);
 			path = "Data Layer";
 			sourceTree = "<group>";
@@ -267,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				8EC4DE7F28BD6A58006FFB64 /* Rockets.storyboard */,
+				8E99853328BDE95000738AA7 /* RocketViewModel.swift */,
 				8EA8340528BD6CD100F62073 /* RocketsViewController.swift */,
 			);
 			path = "UI Layer";
@@ -443,7 +491,7 @@
 			children = (
 				8ECA933628BA1C0A00FD3A3A /* LaunchesAPIDataRequest.swift */,
 				8ECA933828BA1C2100FD3A3A /* LaunchesFakeDataRequest.swift */,
-				8ECA933028BA18AF00FD3A3A /* DataRequestRepository.swift */,
+				8ECA933028BA18AF00FD3A3A /* LaunchesDataRequestRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -673,9 +721,12 @@
 				8EDBD27028BBDF0100DE93BC /* UIStyle.swift in Sources */,
 				8ECA932D28BA0C2800FD3A3A /* LaunchesAPIClient.swift in Sources */,
 				8EDBD27328BBDFD100DE93BC /* UILabelExtensions.swift in Sources */,
+				8E99853728BDE97700738AA7 /* RocketModel.swift in Sources */,
 				8E86F83C28B8035F004FA943 /* Box.swift in Sources */,
+				8E99853428BDE95000738AA7 /* RocketViewModel.swift in Sources */,
 				8E86F85228B8174C004FA943 /* APIPath.swift in Sources */,
 				8E86F84928B810B9004FA943 /* LaunchesViewController.swift in Sources */,
+				8E99852E28BDDC5300738AA7 /* RocketsDataRequestRepository.swift in Sources */,
 				8E86F84C28B810E4004FA943 /* LaunchesViewModel.swift in Sources */,
 				8ECA933528BA1BC100FD3A3A /* LaunchesModel.swift in Sources */,
 				8E86F84128B80CC5004FA943 /* Storyboard.swift in Sources */,
@@ -684,7 +735,10 @@
 				8EA8340828BD6F9C00F62073 /* Flag.swift in Sources */,
 				8EC9EDB428B759CE00BC78AE /* AppDelegate.swift in Sources */,
 				8EA8340628BD6CD100F62073 /* RocketsViewController.swift in Sources */,
-				8ECA933128BA18AF00FD3A3A /* DataRequestRepository.swift in Sources */,
+				8E99852B28BDDA4A00738AA7 /* RocketsAPI.swift in Sources */,
+				8E99853228BDE86B00738AA7 /* RocketsFakeDataRequest.swift in Sources */,
+				8ECA933128BA18AF00FD3A3A /* LaunchesDataRequestRepository.swift in Sources */,
+				8E99852928BDD9DF00738AA7 /* RocketsAPIClient.swift in Sources */,
 				8ECA933328BA198A00FD3A3A /* GenericResponseResult.swift in Sources */,
 				8EC9EDF128B7848000BC78AE /* APIRouter.swift in Sources */,
 				8E7FEE1028B95DAD00A1F72A /* Launches.swift in Sources */,
@@ -697,6 +751,7 @@
 				8ECA933F28BA5A2000FD3A3A /* Alert.swift in Sources */,
 				8ECA933728BA1C0A00FD3A3A /* LaunchesAPIDataRequest.swift in Sources */,
 				8EC9EDB628B759CE00BC78AE /* SceneDelegate.swift in Sources */,
+				8E99852528BDD72300738AA7 /* Rockets.swift in Sources */,
 				8E86F83E28B8062B004FA943 /* LoadingViewController.swift in Sources */,
 				8ECA933928BA1C2200FD3A3A /* LaunchesFakeDataRequest.swift in Sources */,
 				8E2AD0AD28BD1C5500E92FAA /* UIViewExtensions.swift in Sources */,
@@ -704,6 +759,7 @@
 				8E86F83728B801A8004FA943 /* LoadingModel.swift in Sources */,
 				8ECA934A28BA9B7C00FD3A3A /* AppColors.swift in Sources */,
 				8ECA934828BA990400FD3A3A /* Fonts.swift in Sources */,
+				8E99853028BDDFC500738AA7 /* RocketsAPIDataRequest.swift in Sources */,
 				8ECA933B28BA2A1B00FD3A3A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

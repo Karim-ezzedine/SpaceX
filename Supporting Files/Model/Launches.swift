@@ -69,5 +69,5 @@ class Launche: Codable {
     var isUpcoming: Bool { return upcoming ?? false }
     var isSuccessful: Bool { return success ?? false }
     var launchingName: String { return name ?? "" }
-    
+    var rocketId: String { return rocket ?? "" }
 }

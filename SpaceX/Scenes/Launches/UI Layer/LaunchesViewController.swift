@@ -176,6 +176,7 @@ extension LaunchesViewController: UICollectionViewDataSource , UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let vc = Storyboard.rockets.instantiateViewController(withIdentifier: ViewControllerID.rocketsViewID) as? RocketsViewController {
             self.modalPresentationStyle = pageModale
+            vc.rocketViwModel = RocketViewModel(id: launchesViwModel.lauches.value[indexPath.row].rocketId)
             self.present(vc, animated: true)
         }
     }

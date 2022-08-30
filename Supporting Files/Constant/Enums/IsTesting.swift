@@ -9,4 +9,5 @@ import Foundation
 
 enum IsTesting {
     static let launches = appDelegate.isTesting && false
+    static let rockets = appDelegate.isTesting && false
 }
