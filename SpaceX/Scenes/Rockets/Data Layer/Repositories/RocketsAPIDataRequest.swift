@@ -15,6 +15,10 @@ class RocketsAPIDataRequest: RocketsDataRequestRepository {
         rocketsAPI = RocketsAPI()
     }
     
+    // MARK: - Get Rocket
+    ////  Method Called in RocketViewModel -> getRocket() Function
+    ////  Function created to fetch one rocket data selected by ID
+   
     func getRocket(id: String, completion: @escaping (GenericResponseResult<Rocket>) -> Void) {
         rocketsAPI.getRockets(id: id) { result in
             switch result {

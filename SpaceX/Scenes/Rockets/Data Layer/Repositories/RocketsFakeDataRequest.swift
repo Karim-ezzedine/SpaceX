@@ -9,6 +9,10 @@ import Foundation
 
 class RocketsFakeDataRequest: RocketsDataRequestRepository {
     
+    // MARK: - Get Rocket
+    ////  Method Called in RocketViewModel -> getRocket() Function.
+    ////  Function created to create a hardcoded Rocket data for test mode.
+    
     func getRocket(id: String, completion: @escaping (GenericResponseResult<Rocket>) -> Void) {
         
         let rocket = Rocket(

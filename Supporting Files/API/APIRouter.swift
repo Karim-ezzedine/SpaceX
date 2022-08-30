@@ -23,7 +23,6 @@ struct ParametersAndEncoding {
 }
 
 extension APIRouteable {
-    var baseURL: String { return "" /*URLs.baseURL*/ }
 
     // MARK: - URLRequestConvertible
     func asURLRequest() throws -> URLRequest {
@@ -57,10 +56,6 @@ extension APIRouteable {
                 #endif
             }
         })
-        
-        #if DEBUG
-        // urlRequest.cachePolicy = .reloadRevalidatingCacheData
-        #endif
 
         return urlRequest
     }

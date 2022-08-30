@@ -14,20 +14,11 @@ class APIClient {
             .request(route)
             .responseDecodable (decoder: decoder){ (response: DataResponse<T, AFError>) in
                 
-                var resultDataString = ""
-                
                 #if DEBUG
                 print("APIClient statusCode \(route.requestTitle):",response.response?.statusCode ?? "nil")
                 if response.data != nil {
                     let responseString = String(decoding: response.data!, as: UTF8.self)
                     print("APIClient responseString \(route.requestTitle):",responseString)
-                    resultDataString = responseString
-                }
-                #else
-                if appDelegate.enableApiDebugErrorIOS || isReleaseDebug() || appDelegate.enableApiLogIOS {
-                    if response.data != nil {
-                        resultDataString = String(decoding: response.data!, as: UTF8.self)
-                    }
                 }
                 #endif
                 
