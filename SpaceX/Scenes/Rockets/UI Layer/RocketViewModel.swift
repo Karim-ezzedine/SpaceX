@@ -16,8 +16,6 @@ class RocketViewModel {
     var showProgress: Box<Bool> = Box(false)
     var rocket: Box<Rocket> = Box(Rocket())
     
-    //MARK: - Geters
-    
     //MARK: - Initializer
     init(id: String) {
         self.rocketModel = RocketModel(id: id)

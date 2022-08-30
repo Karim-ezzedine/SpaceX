@@ -10,7 +10,7 @@ import Alamofire
 
 class LaunchesAPI {
  
-    func getLaunches(completion: @escaping (Swift.Result<Launches, AFError>) -> Void) {
+    func getLaunches(page: Int, completion: @escaping (Swift.Result<GetLaunchesResult, AFError>) -> Void) {
         
         var queryParams: [String : Any] = [:]
         
@@ -23,7 +23,9 @@ class LaunchesAPI {
         }
     
         let optionsParams: [String : Any] = [
-            "pagination": false,
+            "pagination": true,
+            "limit": 20,
+            "page": page,
             "select": ["name", "flight_number", "date_utc", "date_unix", "upcoming", "rocket", "success"],
             "sort": [
                 "date_unix": "desc"
@@ -38,7 +40,7 @@ class LaunchesAPI {
         APIClient.getLaunches(param: parameters) { result in
             switch result {
             case .success(let data):
-                completion(.success(data.launches))
+                completion(.success(data))
             case .failure(let error):
                 completion(.failure(error))
             }
