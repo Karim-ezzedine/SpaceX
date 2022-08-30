@@ -16,8 +16,6 @@ class LaunchesViewModel {
     var showProgress: Box<Bool> = Box(false)
     var lauches: Box<Launches> = Box([])
     
-    //MARK: - Geters
-    
     //MARK: - Initializer
     init(launchesModel: LaunchesModel = LaunchesModel()) {
         self.launchesModel = launchesModel
@@ -27,6 +25,10 @@ class LaunchesViewModel {
 
 //MARK: - Data Fetching
 private extension LaunchesViewModel {
+    
+    // MARK: - Get Launches
+    ////  Method Called in initializer
+    ////  Function created to get the successful and  upcoming rocket launches for the last 3 years.
     
     func getLaunches() {
         self.showProgress.value = true

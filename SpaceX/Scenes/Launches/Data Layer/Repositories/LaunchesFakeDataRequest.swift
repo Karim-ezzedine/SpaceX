@@ -9,6 +9,10 @@ import Foundation
 
 class LaunchesFakeDataRequest: LaunchesDataRequestRepository {
     
+    // MARK: - Get Launches
+    ////  Method Called in LaunchesViewModel -> getLaunches() Function.
+    ////  Function created to create a hardcoded launches data for test mode.
+    
     func getLaunches(completion: @escaping (GenericResponseResult<Launches>) -> Void) {
         var launches: Launches = []
         

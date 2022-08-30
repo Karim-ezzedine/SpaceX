@@ -28,6 +28,10 @@ class RocketViewModel {
 //MARK: - Data Fetching
 private extension RocketViewModel {
     
+    // MARK: - Get Rocket
+    ////  Method Called in initializer
+    ////  Function created to get the selected Launched rocket data in the Launches Page by using the rocket ID
+    
     func getRocket() {
         self.showProgress.value = true
         

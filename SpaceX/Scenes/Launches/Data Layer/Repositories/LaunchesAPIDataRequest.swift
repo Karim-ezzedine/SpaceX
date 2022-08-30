@@ -15,6 +15,11 @@ class LaunchesAPIDataRequest: LaunchesDataRequestRepository {
         launchesAPI = LaunchesAPI()
     }
     
+    // MARK: - Get Launches
+    ////  Method Called in LaunchesViewModel -> getLaunches() Function
+    ////  Function created to fetch and filter localy the launches data
+    ////  Filtiring condition: successful and upcoming rocket launches for the last 3 years .
+    
     func getLaunches(completion: @escaping (GenericResponseResult<Launches>) -> Void) {
         launchesAPI.getLaunches { result in
             switch result {
