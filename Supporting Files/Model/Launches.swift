@@ -9,10 +9,27 @@ import Foundation
 import Alamofire
 
 class GetLaunchesResult: Codable {
+    
     let launches: Launches
+    let hasNextPage: Bool
+    let page: Int
     
     enum CodingKeys: String, CodingKey {
         case launches = "docs"
+        case hasNextPage
+        case page
+    }
+    
+    init(launches: Launches, hasNextPage: Bool, page: Int) {
+        self.launches = launches
+        self.hasNextPage = hasNextPage
+        self.page = page
+    }
+    
+    init() {
+        self.launches = []
+        self.hasNextPage = false
+        self.page = 1
     }
 }
 

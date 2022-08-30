@@ -18,7 +18,6 @@ class RocketsAPI {
     
         let optionsParams: [String : Any] = [
             "pagination": false,
-            "limit": 1,
             "select": ["name", "description", "wikipedia", "flickr_images"],
         ]
         

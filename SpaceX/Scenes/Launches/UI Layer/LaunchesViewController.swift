@@ -180,5 +180,12 @@ extension LaunchesViewController: UICollectionViewDataSource , UICollectionViewD
             self.present(vc, animated: true)
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.row == launchesViwModel.lauches.value.count - 5 && launchesViwModel.allowPagination {
+            print("Cell Index: \(indexPath.row)")
+            self.launchesViwModel.getLaunches()
+        }
+    }
 }
 

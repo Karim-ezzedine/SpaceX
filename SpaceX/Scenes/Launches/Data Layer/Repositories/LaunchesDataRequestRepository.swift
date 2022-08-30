@@ -12,6 +12,6 @@ import Foundation
 //// Checkout the init() method in -> LaunchesModel
 
 protocol LaunchesDataRequestRepository {
-    func getLaunches(completion: @escaping (GenericResponseResult<Launches>) -> Void)
+    func getLaunches(page: Int, completion: @escaping (GenericResponseResult<GetLaunchesResult>) -> Void)
 }
 
